@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jan 31 19:24:41 2018
+
+@author: bhupe
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+import os
+os.chdir('C:/Users/bhupe/Desktop/Factors affecting Tourism')
+
+
+
+
+a=[]
+b=[]
+import codecs
+with codecs.open('final_1.txt', "r",encoding='utf-8', errors='ignore') as fdata:
+    c=fdata.readlines()
+    for i in range(0,len(c)):
+        
+        d=c[i][len(c[i])-12]
+        b.append(d)
+        #while(c[e-1]=='\t'):
+        #    e=e-1
+        f=len(c[i])-14
+        a.append(c[i][0:f])
